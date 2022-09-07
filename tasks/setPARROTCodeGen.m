@@ -37,7 +37,7 @@ for k = 1:length(modelList)
         sigObj = Simulink.Signal;
         sigObj.CoderInfo.StorageClass = 'ImportedExternPointer';
         sigObj.CoderInfo.Identifier = 'imRGB';            
-        set_param(portHandle, 'SignalObject', sigObj);        
+        set_param(portHandle, 'SignalObject', sigObj);
     end
     
     % Only save if model is not opened, just in case there are unsaved changes

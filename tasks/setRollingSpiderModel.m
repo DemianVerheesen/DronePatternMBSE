@@ -13,7 +13,7 @@ model = 'RollingSpider';
 % Save variable to .MAT fie for persistence
 save(fullfile(projectRoot,'mainModels','modelParrot.mat'),'model');
 % Update title
-mainModel = 'parrotMinidroneHover';
+mainModel = 'parrotMinidroneWaypointFollower';
 load_system(mainModel);
 % @todo update the usage of edit-time filter filterOutInactiveVariantSubsystemChoices()
 % instead use the post-compile filter activeVariants() - g2597375
